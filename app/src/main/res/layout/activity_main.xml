@@ -157,6 +157,26 @@
 
     <TableRow
         android:id="@+id/row8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image" />
+
+        <EditText
+            android:id="@+id/etImage"
+            android:layout_width="250"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/row9"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
@@ -170,9 +190,8 @@
 
     </TableRow>
 
-
     <TableRow
-        android:id="@+id/row9"
+        android:id="@+id/row10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center">
