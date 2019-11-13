@@ -25,6 +25,7 @@
         android:id="@+id/row2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <TextView
@@ -36,7 +37,9 @@
         <EditText
             android:id="@+id/etFullName"
             android:layout_width="250dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            />
 
     </TableRow>
 
@@ -44,6 +47,7 @@
         android:id="@+id/row3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <TextView
@@ -56,7 +60,8 @@
             android:id="@+id/etDOB"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:focusable="false"/>
+            android:focusable="false"
+            android:background="@drawable/border"/>
 
     </TableRow>
 
@@ -64,6 +69,7 @@
         android:id="@+id/row4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <TextView
@@ -103,6 +109,7 @@
         android:id="@+id/row5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <TextView
@@ -115,7 +122,8 @@
             android:id="@+id/spCountry"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:entries="@array/countries"/>
+            android:entries="@array/countries"
+            android:background="@drawable/border"/>
 
     </TableRow>
 
@@ -123,6 +131,7 @@
         android:id="@+id/row6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <TextView
@@ -134,7 +143,8 @@
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="250dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"/>
 
     </TableRow>
 
@@ -142,18 +152,20 @@
         android:id="@+id/row7"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <TextView
             android:id="@+id/tvPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact Number" />
+            android:text="Contact Number  " />
 
         <EditText
             android:id="@+id/etContact"
             android:layout_width="250dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"/>
 
     </TableRow>
 
@@ -161,6 +173,7 @@
         android:id="@+id/row8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:gravity="center">
 
         <TextView
@@ -169,10 +182,12 @@
             android:layout_height="wrap_content"
             android:text="Image" />
 
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/etImage"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            />
 
     </TableRow>
 

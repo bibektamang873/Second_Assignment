@@ -14,7 +14,7 @@ import java.util.List;
 
 public class UserListRvActivity extends AppCompatActivity {
     RecyclerView userRvList;
-    List<User> users = new ArrayList<>();
+    List<User> users ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
