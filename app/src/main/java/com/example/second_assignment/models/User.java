@@ -1,6 +1,8 @@
 package com.example.second_assignment.models;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private String fullName, gender,dob, country, email, contact;
     private int image;
 
