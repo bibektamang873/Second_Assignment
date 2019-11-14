@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etDOB.setOnClickListener(this);
         btnSubmit.setOnClickListener(this);
         btnView.setOnClickListener(this);
+        rgGender.setOnCheckedChangeListener(this);
 
         ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter(this, R.layout.images,userImages);
         etImage.setAdapter(stringArrayAdapter);
@@ -93,6 +94,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this, "Please select country", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void onCheckedChanged(RadioGroup group, int i) {
+        if (i == R.id.rbMale) {
+            gender = "Male";
+            Toast.makeText(this, "Male", Toast.LENGTH_SHORT).show();
+        }
+        if (i == R.id.rbFemale) {
+            gender = "Female";
+            Toast.makeText(this, "Female", Toast.LENGTH_SHORT).show();
+        }
+        if (i == R.id.rbOther) {
+            gender = "Other";
+            Toast.makeText(this, "Others", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
@@ -181,19 +198,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
-    public void onCheckedChanged(RadioGroup group, int i) {
-        if (i == R.id.rbMale) {
-            gender = "Male";
-            Toast.makeText(this, "Male", Toast.LENGTH_SHORT).show();
-        }
-        if (i == R.id.rbFemale) {
-            gender = "Female";
-            Toast.makeText(this, "Female", Toast.LENGTH_SHORT).show();
-        }
-        if (i == R.id.rbOther) {
-            gender = "Other";
-            Toast.makeText(this, "Others", Toast.LENGTH_SHORT).show();
-        }
-    }
+
 }

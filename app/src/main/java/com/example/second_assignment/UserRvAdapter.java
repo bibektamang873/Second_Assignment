@@ -14,12 +14,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.second_assignment.models.User;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class UserRvAdapter extends RecyclerView.Adapter<UserRvAdapter.MyHolder> {
 
-    List<User> users = new ArrayList<>();
+    List<User> users ;
     Context context;
 
     public UserRvAdapter(Context mContext, List<User> userList) {
@@ -30,7 +30,7 @@ public class UserRvAdapter extends RecyclerView.Adapter<UserRvAdapter.MyHolder> 
     @NonNull
     @Override
     public MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_user_profile,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.user_rv_design,parent,false);
         MyHolder myHolder = new MyHolder(view);
         return myHolder;
     }
