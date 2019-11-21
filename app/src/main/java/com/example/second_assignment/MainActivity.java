@@ -30,7 +30,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
     final List<User> users = new ArrayList<>();
-    String[] userImages = {"bibek", "rijesh", "shreya", "shristi" };
+    String[] userImages = {"bibek", "sita", "suyogya", "shristi" };
     EditText etFullName, etDOB, etContact, etEmail;
     RadioGroup rgGender;
     RadioButton rbMale, rbFemale, rbOther;
