@@ -129,7 +129,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this, "User has been added successfully", Toast.LENGTH_SHORT).show();
             }
         }
-
         if(v.getId() == R.id.etDOB){
             new DatePickerDialog(this, myDatePicker,
                     calender.get(Calendar.YEAR),
@@ -137,66 +136,50 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     calender.get(Calendar.DAY_OF_MONTH)
             ).show();
         }
-
         if (v.getId() == R.id.btnView){
             Intent intent = new Intent(MainActivity.this,UserListRvActivity.class);
             intent.putExtra("allusers",(Serializable) users);
             startActivity(intent);
         }
-
     }
 
     private boolean validate() {
         if (TextUtils.isEmpty(fullName)) {
             etFullName.setError("Enter Name");
             return false;
-
         }
         if (TextUtils.isEmpty(email)) {
             etEmail.setError("Enter Email");
             return false;
-
         }
-
         if (TextUtils.isEmpty(dob)) {
             etDOB.setError("Enter DOB");
             return false;
-
         }
         if (TextUtils.isEmpty(contact)) {
             etContact.setError("Enter Phone");
             return false;
-
         }
         if (TextUtils.isEmpty(imageID)) {
             etEmail.setError("Enter image");
             return false;
-
         }
         if (TextUtils.isEmpty(country)) {
             Toast.makeText(this, "Select Country", Toast.LENGTH_SHORT).show();
             return false;
-
         }
         if(!TextUtils.isDigitsOnly(contact)){
             etContact.setError("Invalid Phone");
             return false;
-
         }
         if(TextUtils.isEmpty(gender)){
             Toast.makeText(this, "Select Gender", Toast.LENGTH_SHORT).show();
             return false;
-
         }
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             etEmail.setError("Invalid Email");
             return false;
         }
-
         return true;
-
-
     }
-
-
 }
